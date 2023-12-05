@@ -31,7 +31,14 @@ function createDivs(amountOfSquares) {
   const hoveredDiv = document.querySelectorAll(".innerDiv");
   hoveredDiv.forEach((el) =>
     el.addEventListener("mouseover", function color(coloredDiv) {
-      coloredDiv.currentTarget.style.backgroundColor = "blue";
+      coloredDiv.currentTarget.style.backgroundColor =
+        "rgb(" +
+        Math.random() * 250 +
+        "," +
+        Math.random() * 250 +
+        "," +
+        Math.random() * 250 +
+        ")";
     })
   );
 
