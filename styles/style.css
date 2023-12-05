@@ -2,19 +2,21 @@ body {
   overflow-x: hidden;
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
-  max-width: 800px;
-  max-height: 800px;
-  aspect-ratio: 1 / 1;
+  width: 900px;
+  height: 900px;
+  margin-top: 10px;
 }
 
 .innerDiv {
   border: 2px solid black;
-  aspect-ratio: 1 / 1;
-  flex: 1 1 calc(100% / 18);
+  box-sizing: border-box;
 }
